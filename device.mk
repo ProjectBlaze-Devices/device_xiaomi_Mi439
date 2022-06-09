@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
+# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml \
