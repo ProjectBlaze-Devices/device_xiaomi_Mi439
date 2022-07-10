@@ -14,6 +14,7 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_USE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_LAWNCHAIR := true
 
 # Official
 BLAZE_BUILD_TYPE := OFFICIAL
